@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+
+}
+
+.container {
+
+    display: grid;
+
+    grid-template-columns: 1fr repeat(8, minmax(min-content, 20rem)) 1fr;
+    grid-template-rows: min-content 90vh 5vh;
+}
+
+.header {
+
+    grid-column: 2 / 10;
+    padding: 1rem 0rem;
+    min-height: 8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    align-items: center;
+
+    &__logo {
+        height: 2rem;
+    }
+
+    &__action {
+        width: auto;
+
+        display: flex;
+        justify-content: end;
+    }
+
+    &__text {
+        border: 1px solid rgb(72, 71, 71);
+        border-radius: 10px 0px 0px 10px;
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding: 1rem 1rem;
+        text-align: center;
+        
+    }
+
+    &__input  {
+        border: 1px solid rgb(72, 71, 71);
+        border-left: none;
+        width: 10rem;
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+}
+
+.places {
+
+    grid-column: 2 / 10;
+}
+
+.footer {
+    background-color: rgb(10, 9, 7);
+    grid-column: 2 / 10;
+}
+
+// addons 
+
+.border {
+
+}
