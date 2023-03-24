@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,25 +14,166 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <main class="container">
         <header class="header">
             <img src="/img/logo.png" alt="Logo Windbnb" class="header__logo">
 
             <div class="header__action">
-                <p class="header__text">Riohacha, Colombia</p>
-                <label for="guests"></label>
-                <input class="header__input" type="text" id="guests" placeholder="Add guests">
+         
+                <form action="#" method="get" class="header__form">
+                    <p class="header__text">Riohacha, Colombia</p>
+                    <label for="guests"></label>
+                    <input class="header__input" type="text" id="guests" placeholder="Search">
+    
+                   <a href="">
+                    <div class="header__icon">
+                        <svg>
+                            <use xlink:href="/icon/sprite.svg#icon-search"></use>
+                        </svg>
+                    </div>
+                   </a>
+                </form>
+
             </div>
+
         </header>
 
         <section class="places">
-            Places
+            <div class="place">
+                <img class="place__img" src="/img/home-1.webp" alt="Place 2">
+
+                <div class="place__content">
+
+                    <p class="place__host">Super host</p>
+                    <p class="place__info">Entire apartment, 2 beds</p>
+                    <div class="place__icon">
+                        <svg>
+                            <use xlink:href="/icon/sprite.svg#icon-star-full"></use>
+                            <p>4.40</p>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <h5 class="header-5 place__name">
+                    Stylist apartment in center of the City
+                </h5>
+
+            </div>
+
+            <div class="place">
+                <img class="place__img" src="/img/home-2.webp" alt="Place 2">
+
+                <div class="place__content">
+
+                    <p class="place__info">Entire apartment, 2 beds</p>
+                    <div class="place__icon">
+                        <svg>
+                            <use xlink:href="/icon/sprite.svg#icon-star-full"></use>
+                            <p>4.25</p>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <h5 class="header-5 place__name">
+                    Cozy, peaceful and private room
+                </h5>
+
+            </div>
+
+            <div class="place">
+                <img class="place__img" src="/img/home-3.webp" alt="Place 3">
+
+                <div class="place__content">
+
+                    <p class="place__info">Entire House</p>
+                    <div class="place__icon">
+                        <svg>
+                            <use xlink:href="/icon/sprite.svg#icon-star-full"></use>
+                            <p>4.90</p>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <h5 class="header-5 place__name">
+                    Modern House in a remote area
+                </h5>
+
+            </div>
+
+            <div class="place">
+                <img class="place__img" src="/img/home-4.webp" alt="Casa 1">
+
+                <div class="place__content">
+
+                    <p class="place__host">Super host</p>
+                    <p class="place__info">Entire apartment, 2 beds</p>
+                    <div class="place__icon">
+                        <svg>
+                            <use xlink:href="/icon/sprite.svg#icon-star-full"></use>
+                            <p>4.85</p>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <h5 class="header-5 place__name">
+                    Stylist room in desing distric
+                </h5>
+
+            </div>
+
+            <div class="place">
+                <img class="place__img" src="/img/home-5.webp" alt="Casa 1">
+
+                <div class="place__content">
+
+                    <p class="place__info">Private room</p>
+                    <div class="place__icon">
+                        <svg>
+                            <use xlink:href="/icon/sprite.svg#icon-star-full"></use>
+                            <p>4.54</p>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <h5 class="header-5 place__name">
+                    Modern home close to nature
+                </h5>
+
+            </div>
+
+            <div class="place">
+                <img class="place__img" src="/img/home-6.webp" alt="Casa 1">
+
+                <div class="place__content">
+
+                    <p class="place__info">Entire house</p>
+                    <div class="place__icon">
+                        <svg>
+                            <use xlink:href="/icon/sprite.svg#icon-star-full"></use>
+                            <p>4.64</p>
+                        </svg>
+                    </div>
+
+                </div>
+
+                <h5 class="header-5 place__name">
+                    House in a remote area
+                </h5>
+
+            </div>
         </section>
 
         <footer class="footer">
-            Footer
+            Create by JuanMa - devChallenges.io
         </footer>
     </main>
 </body>
+
 </html>

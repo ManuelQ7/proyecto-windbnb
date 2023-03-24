@@ -1,3 +1,7 @@
+// colors
+
+$color-red-light: #bd0003;
+
 *,
 *::before,
 *::after {
@@ -19,8 +23,8 @@ body {
 
     display: grid;
 
-    grid-template-columns: 1fr repeat(8, minmax(min-content, 20rem)) 1fr;
-    grid-template-rows: min-content 90vh 5vh;
+    grid-template-columns: 1fr repeat(8, minmax(min-content, 18rem)) 1fr;
+    grid-template-rows: min-content min-content 10rem;
 }
 
 .header {
@@ -45,33 +49,109 @@ body {
     }
 
     &__text {
-        border: 1px solid rgb(72, 71, 71);
-        border-radius: 10px 0px 0px 10px;
         font-weight: 400;
         font-size: 1.2rem;
-        padding: 1rem 1rem;
         text-align: center;
+        margin-right: 1rem;
         
     }
 
     &__input  {
-        border: 1px solid rgb(72, 71, 71);
-        border-left: none;
         width: 10rem;
+        border: none;
         text-align: center;
         padding: 1rem 1rem;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+
+        border: 1px solid rgba(0, 0, 0, 0.057);
+        border-radius: 15px;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.112);
+        padding: 0.5rem 2rem;
+    }
+
+    &__icon {
+
+        margin-left: 1rem;
+
+        svg {
+            fill: $color-red-light;
+            height: 1.5rem;
+            width: 1.5rem;
+            transform: translateY(25%);
+        }
     }
 }
 
 .places {
-
     grid-column: 2 / 10;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 7rem;
+
+}
+
+.place {
+
+    &__img {
+        width: 100%;
+        height: 27rem;
+        border-radius: 20px;
+        box-shadow: 0rem 2rem 5rem rgba(0, 0, 0, 0.183);
+        margin-bottom: 0.5rem;
+    }
+
+    &__content {
+        display: flex;
+        margin: 1rem 0rem;
+        font-size: 1.2rem;
+        align-items: center;
+        justify-items: center;
+    }
+
+    &__host {
+        border: 1px solid black;
+        border-radius: 25px;
+        padding: 0.5rem 1.5rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-right: 2rem;
+    }
+
+    &__info {
+        margin-right: auto;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+
+    }
+
+    &__icon {
+        
+        display: flex;
+        align-items: center;
+
+        svg {
+            fill: $color-red-light;
+            height: 2rem;
+            width: 2rem;
+            margin-right: 0.5rem;
+        }
+    }
 }
 
 .footer {
-    background-color: rgb(10, 9, 7);
+    text-align: center;
+    margin-top: 5rem;
     grid-column: 2 / 10;
 }
+
+
 
 // addons 
 
