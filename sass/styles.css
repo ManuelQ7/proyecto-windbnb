@@ -23,6 +23,18 @@ html {
       grid-template-rows: min-content min-content 10rem;
 }
 
+@media only screen and (max-width: 92.5rem) {
+  .container {
+    padding: 0 10rem;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
 .header {
   -ms-grid-column: 2;
   -ms-grid-column-span: 8;
@@ -42,6 +54,13 @@ html {
   height: 2rem;
 }
 
+@media only screen and (max-width: 37.5rem) {
+  .header__logo {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+  }
+}
+
 .header__action {
   width: auto;
   display: -webkit-box;
@@ -50,6 +69,16 @@ html {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .header__action {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .header__text {
@@ -101,6 +130,13 @@ html {
   -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   grid-gap: 7rem;
+}
+
+@media only screen and (max-width: 68.75rem) {
+  .places {
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
 }
 
 .place__img {
